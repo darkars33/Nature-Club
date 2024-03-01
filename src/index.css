@@ -6,6 +6,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fdf4f4;
+  /* background-color: #fdf4f4; */
   font-family: Arial, Helvetica, sans-serif;
+}
+.club{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: rotate(180deg);
+  line-height: 0.865em;
+  background: linear-gradient(0deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.5;
 }

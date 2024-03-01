@@ -20,6 +20,7 @@ export default {
 
       'sm': {'min': '800px'},
       // => @media (max-width: 639px) { ... }
+      'xs': {'max': '559px'},
     }
   },
   plugins: [],
