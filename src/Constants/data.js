@@ -1,9 +1,5 @@
 export const navLink =[
           {
-                    id:'/',
-                    title:"Nature Club"
-          },
-          {
                     id:'/gallery',
                     title:"Gallery"
           },
