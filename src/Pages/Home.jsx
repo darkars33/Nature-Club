@@ -45,7 +45,7 @@ const Home = () => {
               <p className="text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
           </div>
           <img src={plant} alt="" />
-          <div className="w-[450px] h-[75%] box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%]">
+          <div className="w-[450px] h-[75%] box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%] ms:hover:w-[full]">
               <h1 className="text-[35px]">Our Vision</h1>
               <p className=" relative text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
           </div>
