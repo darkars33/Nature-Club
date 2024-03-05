@@ -38,19 +38,21 @@ const Home = () => {
         {/* <Line /> */}
       </div>
       <br />
-      <div className="w-full h-[40vh]  flex justify-center items-center">
+      <div className="w-full   flex justify-center items-center">
         <div className="w-[80%] h-[80%] flex justify-between items-center ms:flex-col ms:gap-4">
-          <div className="w-[450px] h-[75%] box flex justify-center flex-col gap-1 ms:w-full lg:h-[100%]">
+          <div className="w-[450px] h-[75%] p-3 box flex justify-center flex-col gap-1 ms:w-full lg:h-[100%]">
               <h1 className="text-[35px] text-center">Our Mission</h1>
               <p className="text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
           </div>
           <img src={plant} alt="" />
-          <div className="w-[450px] h-[75%] box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%] ms:hover:w-[full]">
+          <div className="w-[450px] h-[75%] p-3 box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%] ms:hover:w-[full]">
               <h1 className="text-[35px]">Our Vision</h1>
               <p className=" relative text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
           </div>
         </div>
+        
       </div>
+      <h1 className="bg-black">jac</h1>
     </>
   );
 };
