@@ -52,7 +52,7 @@ const Home = () => {
         </div>
         
       </div>
-      <h1 className="bg-black">jac</h1>
+      <br />
     </>
   );
 };

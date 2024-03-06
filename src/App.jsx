@@ -7,6 +7,7 @@ import Leaderboard from "./Pages/Leaderboard";
 import Team from "./Pages/Team";
 import Home from "./Pages/Home";
 import Error from "./Pages/Error";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
