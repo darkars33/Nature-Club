@@ -3,6 +3,8 @@ import homeScreen from "../assets/homeScreen.svg";
 import Line from "../Components/Line";
 import plant from "../assets/plant.svg";
 
+import { recentPhotos } from "../Constants/data";
+
 const Home = () => {
   const backgroundImage = {
     backgroundImage: `url(${homeScreen})`,
@@ -11,6 +13,11 @@ const Home = () => {
     backgroundPosition: "center",
     innerHeight: "full",
     innerWidth: "full",
+  };
+  const { id } = recentPhotos;
+  const style = {
+    "--i": 1,
+    transform: "rotateY(calc(var(--i)*45deg)) translateZ(350px)",
   };
 
   return (
@@ -41,16 +48,52 @@ const Home = () => {
       <div className="w-full   flex justify-center items-center">
         <div className="w-[80%] h-[80%] flex justify-between items-center ms:flex-col ms:gap-4">
           <div className="w-[450px] h-[75%] p-3 box flex justify-center flex-col gap-1 ms:w-full lg:h-[100%]">
-              <h1 className="text-[35px] text-center">Our Mission</h1>
-              <p className="text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
+            <h1 className="text-[35px] text-center">Our Mission</h1>
+            <p className="text-center leading-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+              velit totam debitis voluptatum quia labore, dignissimos officiis
+              possimus nulla reprehenderit quibusdam magni nisi accusantium
+              eligendi dolorum neque nam illum illo!
+            </p>
           </div>
           <img src={plant} alt="" />
           <div className="w-[450px] h-[75%] p-3 box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%] ms:hover:w-[full]">
-              <h1 className="text-[35px]">Our Vision</h1>
-              <p className=" relative text-center leading-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima velit totam debitis voluptatum quia labore, dignissimos officiis possimus nulla reprehenderit quibusdam magni nisi accusantium eligendi dolorum neque nam illum illo!</p>
+            <h1 className="text-[35px]">Our Vision</h1>
+            <p className=" relative text-center leading-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+              velit totam debitis voluptatum quia labore, dignissimos officiis
+              possimus nulla reprehenderit quibusdam magni nisi accusantium
+              eligendi dolorum neque nam illum illo!
+            </p>
           </div>
         </div>
-        
+      </div>
+      <br />
+      <div className="flex flex-col  items-center ">
+        <h1 className="text-[30px] pb-10">Recent Events Photos</h1>
+        <div className="w-full p-[40px] flex justify-center flex-col items-center">
+          <div className="relative w-[80%]  flex justify-center">
+            <div className="relative slider">
+              {recentPhotos.map((item) => {
+                return (
+                  <span
+                    style={{
+                      "--i": item.id,
+                      transform:
+                        "rotateY(calc(var(--i)*47deg)) translateZ(300px)",
+                    }}
+                  >
+                    <img
+                      src={item.img}
+                      alt="recent-photos"
+                      className="w-[200px] h-[200px] object-cover"
+                    />
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
       <br />
     </>
