@@ -26,7 +26,7 @@ const Navbar = () =>{
                                                             {show && <div className="flex flex-col absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10">
                                                                                 {navLink.map((item, index)=>{
                                                                                           return(
-                                                                                                    <Link to={item.id} key={index} className="mx-2 text-[#6e6d6d] hover:text-[#000] bg-white text-[15px] p-2 rounded-sm">{item.title}</Link>
+                                                                                                    <Link to={item.id} key={index} className="mx-2 text-[#6e6d6d] hover:text-[#000] bg-white text-[15px] p-2 rounded-sm" onClick={() =>setShow(!show)}>{item.title}</Link>
                                                                                           )
                                                                                 })}
                                                                       </div>

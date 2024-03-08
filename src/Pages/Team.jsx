@@ -29,7 +29,7 @@ const Team = () => {
                     <FaInstagram className="text-[25px] text-gray-600 hover:text-white" />
                   </a>
                   <a
-                    href=""
+                    href={item.lin} target="_blank" rel="noreferrer"
                     className="hover:bg-green-300 p-2 rounded-[50%] border-[1px]"
                   >
                     <FaLinkedin className="text-[25px] text-gray-600 hover:text-white" />
