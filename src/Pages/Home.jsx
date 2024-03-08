@@ -70,9 +70,9 @@ const Home = () => {
         </div>
       </div>
       <br />
-      <div className="flex flex-col  items-center ">
+      <div className="flex flex-col  items-center p-4">
         <h1 className="text-[30px] pb-10">Recent Events Photos</h1>
-        <div className="w-full p-[40px] flex justify-center flex-col items-center">
+        <div className="w-full pt-[40px] flex justify-center flex-col items-center">
           <div className="relative w-[80%]  flex justify-center">
             <div className="relative slider">
               {recentPhotos.map((item) => {
@@ -81,7 +81,7 @@ const Home = () => {
                     style={{
                       "--i": item.id,
                       transform:
-                        "rotateY(calc(var(--i)*47deg)) translateZ(300px)",
+                        "rotateY(calc(var(--i)*53deg)) translateZ(300px)",
                     }}
                   >
                     <img
@@ -99,12 +99,42 @@ const Home = () => {
       <br />
       <div className="w-full p-4 flex flex-col items-center">
         <h1 className="text-[30px]">Feedbacks</h1>
-        <div className="w-[90%] h-[500px] box p-3">
-          <div className="box w-[350px] h-[150px] p-2 flex items-center gap-3">
+        <div className="w-[90%] flex flex-wrap justify-between p-3 gap-2 ms:justify-center">
+          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
               <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
-              <div>
-                <h1>Pravesh</h1>
-                <p>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px] text-center">Pravesh</h1>
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam, voluptates.
+                </p>
+              </div>
+          </div>
+          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px]">Pravesh</h1>
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam, voluptates.
+                </p>
+              </div>
+          </div>
+          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px]">Pravesh</h1>
+                <p className="text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam, voluptates.
+                </p>
+              </div>
+          </div>
+          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px]">Pravesh</h1>
+                <p className="text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, voluptates.
                 </p>
