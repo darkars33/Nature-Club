@@ -2,6 +2,7 @@ import React from "react";
 import homeScreen from "../assets/homeScreen.svg";
 import Line from "../Components/Line";
 import plant from "../assets/plant.svg";
+import Pravesh from "../assets/Pravesh.jpg";
 
 import { recentPhotos } from "../Constants/data";
 
@@ -96,6 +97,21 @@ const Home = () => {
         </div>
       </div>
       <br />
+      <div className="w-full p-4 flex flex-col items-center">
+        <h1 className="text-[30px]">Feedbacks</h1>
+        <div className="w-[90%] h-[500px] box p-3">
+          <div className="box w-[350px] h-[150px] p-2 flex items-center gap-3">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div>
+                <h1>Pravesh</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam, voluptates.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
