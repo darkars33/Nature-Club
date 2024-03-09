@@ -1,12 +1,11 @@
 import React from "react";
-import Pravesh from "../assets/Pravesh.jpg";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { teamdata } from "../Constants/teamdata";
 
 const Team = () => {
   return (
     <>
-      <div className="w-full h-[10vh] bg-black ms:h-[9vh]"></div>
+      <div className="w-full h-[10vh] ms:h-[9vh]"></div>
       <div className="w-full p-7 pt-5 flex justify-center">
         <div className="w-[90%] flex flex-wrap justify-center gap-10">
           {teamdata.map((item) => {
@@ -15,7 +14,7 @@ const Team = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className="w-[100px] h-[100px] rounded-[50%]"
+                  className="w-[100px] h-[100px] rounded-[50%] xxs:w-[150px] xxs:h-[150px]"
                 />
                 <h1 className="text-[20px] pt-2 font-medium">{item.name}</h1>
                 <p className="text-[16px] text-gray-500">{item.position}</p>
