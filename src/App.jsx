@@ -8,6 +8,7 @@ import Team from "./Pages/Team";
 import Home from "./Pages/Home";
 import Error from "./Pages/Error";
 import Footer from "./Components/Footer";
+import Event from "./Pages/Event";
 
 // nishant
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/documentary" element={<Documentary />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/event" element={<Event />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
