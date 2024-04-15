@@ -8,10 +8,10 @@ const Slider = () => {
         <div className="logos">
           <div className="logos-slide">
           {recentPhotos.map((item) => {
-          return <img src={item.img} alt="" className="w-[10rem]" />;
+          return <img src={item.img} alt="" />;
         })}
         {recentPhotos.map((item) => {
-          return <img src={item.img} alt="" className="w-[10rem]" />;
+          return <img src={item.img} alt="" />;
         })}
           </div>
           

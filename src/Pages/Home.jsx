@@ -76,19 +76,19 @@ const Home = () => {
       <div className="w-full p-5 flex flex-col items-center">
           <h1 className="text-[30px]">Recent Events</h1>
           <div className="w-[90%] flex flex-wrap justify-around p-3  ms:justify-center ms:gap-5">
-            <div className="relative w-[300px] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
+            <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
               <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
               <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
               <Link to='event' className="flex items-center text-[14px] text-gray-400 hover:text-green-400">Check to all Events <IoIosArrowRoundForward /> </Link></div>
             </div>
-            <div className="relative w-[300px] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
+            <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
               <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
               <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
               <a href="" className="flex items-center text-[14px] text-gray-400 hover:text-green-400">Check to all Events <IoIosArrowRoundForward /> </a></div>
             </div>
-            <div className="relative w-[300px] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
+            <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
               <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
               <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
@@ -109,7 +109,7 @@ const Home = () => {
       <div className="flex flex-col  items-center p-4">
         <h1 className="text-[30px] pb-10">Recent Events Photos</h1>
         <div className="w-full pt-[0px] flex justify-center flex-col items-center">
-          <div className="relative w-[80%]  flex justify-center">
+          <div className="relative w-[90%]  flex justify-center">
             <Slider />
           </div>
         </div>
