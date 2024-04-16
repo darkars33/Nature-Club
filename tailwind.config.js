@@ -14,13 +14,15 @@ export default {
 
       'lg': {'max': '1023px'},
       // => @media (max-width: 1023px) { ... }
+      'mi':{'min': '1024px'},
       'ms' : {'max': '900px'},
       'md': {'max': '800px'},
       // => @media (max-width: 767px) { ... }
 
       'sm': {'min': '800px'},
       // => @media (max-width: 639px) { ... }
-      'xs': {'max': '559px'},
+      'xs': {'max': '600px'},
+      'mb':{'max': '426px'},
       'xxs': {'max': '400px'},
     },
     boxShadow: {

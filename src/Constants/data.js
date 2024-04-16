@@ -9,6 +9,9 @@ import logo from '../assets/logo.svg';
 
 export const navLink =[
           {
+                    id:'/',
+                    title:"Home"
+          },{
                     id:'/gallery',
                     title:"Gallery"
           },

@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {navLink} from "../Constants/data";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
@@ -16,7 +17,7 @@ const Navbar = () =>{
                                                   <div className="flex items-center gap-10 bg-white ms:gap-1 md:hidden">
                                                             {navLink.map((item, index)=>{
                                                                       return(
-                                                                                <Link to={item.id} key={index} className="mx-2 text-[#6e6d6d] hover:text-[#000] bg-white text-[18px]">{item.title}</Link>
+                                                                                <NavLink to={item.id} key={index} className="mx-2 text-black hover:underline bg-white text-[18px]">{item.title}</NavLink>
                                                                       )
                                                             })}
                                                   </div>

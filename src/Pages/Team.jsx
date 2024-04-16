@@ -15,10 +15,10 @@ const Team = () => {
         <div className="w-full flex flex-col items-center gap-10">
           <div className="w-[90%] flex flex-col gap-5">
             <h1 className="text-[30px] font-medium">Secretary</h1>
-            <div className="w-[100%] flex flex-wrap  gap-10">
+            <div className="w-[100%] flex flex-wrap  gap-10 xs:justify-center">
               {Secretary.map((item) => {
                 return (
-                  <div className="relative border-[1px] w-[230px] p-3 flex flex-col items-center rounded-[10px] hover:translate-z-2 hover:shadow-2xl hover:border-[0px] transition-all">
+                  <div className="relative border-[1px] w-[230px] p-3 flex flex-col items-center rounded-[10px] hover:translate-z-2 hover:shadow-2xl hover:border-[0px] transition-all mb:w-[90%]">
                     <img
                       src={item.img}
                       alt=""
@@ -56,7 +56,7 @@ const Team = () => {
 
           <div className="w-[90%] flex flex-col gap-5">
             <h1 className="text-[30px] font-medium">TE Members</h1>
-            <div className="w-[100%] flex flex-wrap  gap-10">
+            <div className="w-[100%] flex flex-wrap justify-between gap-5 xs:justify-center">
               {TE_Member.map((item) => {
                 return (
                   <div className="relative border-[1px] w-[230px] p-3 flex flex-col items-center rounded-[10px] hover:translate-z-2 hover:shadow-2xl hover:border-[0px] transition-all">
@@ -98,7 +98,7 @@ const Team = () => {
 
           <div className="w-[90%] flex flex-col gap-5">
             <h1 className="text-[30px] font-medium">Joint Secretary</h1>
-            <div className="w-[100%] flex flex-wrap  gap-10">
+            <div className="w-[100%] flex flex-wrap gap-5 mx:justify-between mi:gap-10 xs:justify-center">
               {Joint_Secretary.map((item) => {
                 return (
                   <div className="relative border-[1px] w-[230px] p-3 flex flex-col items-center rounded-[10px] hover:translate-z-2 hover:shadow-2xl hover:border-[0px] transition-all">
