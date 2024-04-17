@@ -11,7 +11,7 @@ const Navbar = () =>{
           const [show, setShow] = useState(false);
           return (
                     <>
-                              <nav className="w-full fixed flex items-center pt-2 top-0 z-20 bg-white ">
+                              <nav className="w-full fixed flex items-center pt-2 top-0 z-20 bg-white border-b border-black">
                                         <div className="w-full flex justify-between items-center max-w-[90%] mx-auto bg-white">
                                                   <Link to='/' className="bg-white flex items-center gap-3"><img src={logo} alt="club-logo" className="bg-white w-14 h-14 mb-3 ms:w-10 ms:h-10"/><h2 className="bg-white text-[25px] font-medium md:text-[20px]">Nature Club</h2></Link>
                                                   <div className="flex items-center gap-10 bg-white ms:gap-1 md:hidden">

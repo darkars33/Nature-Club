@@ -12,17 +12,17 @@ export const navLink =[
                     id:'/',
                     title:"Home"
           },{
-                    id:'/gallery',
-                    title:"Gallery"
+                    id:'/event',
+                    title:"Events"
           },
           {
                     id:'/documentary',
                     title:"Documentary"
           },
-          {
-                    id:'/leaderboard',
-                    title:"Leaderboard"
-          },
+          // {
+          //           id:'/leaderboard',
+          //           title:"Leaderboard"
+          // },
           {
                     id:'/team',
                     title:"Team"

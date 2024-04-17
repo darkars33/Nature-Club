@@ -13,10 +13,10 @@ const Documentary = () => {
             <button className="p-2 bg-green-500 rounded-3xl">Trek</button>
             <button className="p-2 bg-green-500 rounded-3xl">something</button>
           </div>
-          <div className="w-[80%] p-0 pt-5 flex ms:flex-col ms:items-center xs:w-[100%] ">
+          <div className="w-[90%] p-0 pt-5 flex justify-center gap-5 ms:flex-col ms:items-center xs:w-[100%] ">
             {documentrydata.map((data) => {
               return (
-                <div className="relative p-3 w-[400px] flex flex-col items-center xs:w-[100%]">
+                <div className="relative p-3 w-[400px] flex flex-col items-center shadow-lg rounded-md xs:w-[100%]">
                   <iframe
                     className="rounded-lg xs:w-[100%] xs:h-[200px]"
                     width="380"

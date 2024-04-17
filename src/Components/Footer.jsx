@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaYoutube, FaFacebook, FaTwitter, FaLinkedin} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -26,11 +27,11 @@ const Footer = () => {
                                                   <div>
                                                             <div>
                                                                       <ul className="flex flex-col gap-3 text-[18px] cursor-pointer">
-                                                                                <li className="text-green-200 hover:text-white">About us</li>
-                                                                                <li className="text-green-200 hover:text-white">Gallery</li>
-                                                                                <li className="text-green-200 hover:text-white">Our Teams</li>
-                                                                                <li className="text-green-200 hover:text-white">Events</li>
-                                                                                <li className="text-green-200 hover:text-white">Contact us</li>
+                                                                                <Link to='/about us' className="text-green-200 hover:text-white">About us</Link>
+                                                                                <Link to='/gallery' className="text-green-200 hover:text-white">Gallery</Link>
+                                                                                <Link to='/team' className="text-green-200 hover:text-white">Our Teams</Link>
+                                                                                <Link to='/event' className="text-green-200 hover:text-white">Events</Link>
+                                                                                <Link to='/contact' className="text-green-200 hover:text-white">Contact us</Link>
                                                                       </ul>
                                                             </div>
                                                   </div>
