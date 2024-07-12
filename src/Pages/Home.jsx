@@ -78,14 +78,14 @@ const Home = () => {
             </div>
             <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
-              <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
-              <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
+              <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bhuleshwar temple</h1>
+              <p className="text-[15px] xxs:text-[13px]">.</p>
               <a href="" className="flex items-center text-[14px] text-gray-400 hover:text-green-400">Check to all Events <IoIosArrowRoundForward /> </a></div>
             </div>
             <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
-              <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
-              <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
+              <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Tree plantation at Dighi, Pune</h1>
+              <p className="text-[15px] xxs:text-[13px]">Conducted a tree plantation drive at Dighi, Pune with the first year students of Army Institute of Technology.</p>
               <a href="" className="flex items-center text-[14px] text-gray-400 hover:text-green-400">Check to all Events <IoIosArrowRoundForward /> </a></div>
             </div>   
           </div>
@@ -117,12 +117,29 @@ const Home = () => {
               <div className="w-[100%] flex flex-col xxs:items-center">
                 <h1 className="text-[20px] text-center">Pravesh</h1>
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam, voluptates.
+                  As a secretary of Nature's Club, it gives me immese pleasure to do all activities towards mother earth. This platform has made my efforts recognised and took to the next level. 
                 </p>
               </div>
           </div>
           <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px]">Rohit</h1>
+                <p className="text-center">
+                 I am very happy to join Nature club as provides me with and oppurtunity to work for the betterment of th environment and climate.
+                </p>
+              </div>
+          </div>
+          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
+              <div className="w-[100%] flex flex-col xxs:items-center">
+                <h1 className="text-[20px]">Khushia</h1>
+                <p className="text-center">
+                  The refreshing trips organised by the Nature's club makes me feel rejuvinated.
+                </p>
+              </div>
+          </div>
+{/*           <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
               <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
               <div className="w-[100%] flex flex-col xxs:items-center">
                 <h1 className="text-[20px]">Pravesh</h1>
@@ -130,27 +147,7 @@ const Home = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, voluptates.
                 </p>
-              </div>
-          </div>
-          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
-              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
-              <div className="w-[100%] flex flex-col xxs:items-center">
-                <h1 className="text-[20px]">Pravesh</h1>
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam, voluptates.
-                </p>
-              </div>
-          </div>
-          <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
-              <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
-              <div className="w-[100%] flex flex-col xxs:items-center">
-                <h1 className="text-[20px]">Pravesh</h1>
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam, voluptates.
-                </p>
-              </div>
+              </div> */}
           </div>
         </div>
       </div>
