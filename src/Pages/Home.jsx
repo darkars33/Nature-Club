@@ -54,20 +54,14 @@ const Home = () => {
           <div className="w-[450px] h-[75%] p-3 box flex justify-center flex-col gap-1 ms:w-full lg:h-[100%]">
             <h1 className="text-[35px] text-center">Our Mission</h1>
             <p className="text-center leading-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-              velit totam debitis voluptatum quia labore, dignissimos officiis
-              possimus nulla reprehenderit quibusdam magni nisi accusantium
-              eligendi dolorum neque nam illum illo!
+              To foster a deeper connection with nature among students and the community, promote environmental stewardship through education, conservation efforts, and sustainable practices, and inspire a generation of engineers committed to preserving and protecting our natural environment for future generations.
             </p>
           </div>
           <img src={plant} alt="" />
           <div className="w-[450px] h-[75%] p-3 box flex justify-center items-center flex-col gap-1  ms:w-full lg:h-[100%] ms:hover:w-[full]">
             <h1 className="text-[35px]">Our Vision</h1>
             <p className=" relative text-center leading-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-              velit totam debitis voluptatum quia labore, dignissimos officiis
-              possimus nulla reprehenderit quibusdam magni nisi accusantium
-              eligendi dolorum neque nam illum illo!
+              To cultivate a campus culture where every student embraces their role as custodians of the environment, leveraging engineering innovation to create sustainable solutions, and empowering individuals to advocate for biodiversity conservation and environmental harmony in all aspects of life.
             </p>
           </div>
         </div>
@@ -79,7 +73,7 @@ const Home = () => {
             <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
               <img src={img1} alt="events photo" className="w-[350px] h-[200px] rounded-md xxs:h-[180px] xxs:w-[300px]"/>
               <div className="flex flex-col items-start"><h1 className="pt-2 text-[23px] xxs:text-[19px]">Trip to Bird Sanctuary</h1>
-              <p className="text-[15px] xxs:text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis veniam cum, maiores amet neque debitis, iusto atque error.</p>
+              <p className="text-[15px] xxs:text-[13px]">We conducted this trip to develop a deep understanding of migratory birds and role of climate in ecosystem.</p>
               <Link to='event' className="flex items-center text-[14px] text-gray-400 hover:text-green-400">Check to all Events <IoIosArrowRoundForward /> </Link></div>
             </div>
             <div className="relative w-[20rem] p-2 rounded-[10px] flex flex-col items-center hover:shadow-3xl hover:translate-z-2 transition-all hover:border-none">
