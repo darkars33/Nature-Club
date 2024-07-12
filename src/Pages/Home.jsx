@@ -135,7 +135,7 @@ const Home = () => {
               <div className="w-[100%] flex flex-col xxs:items-center">
                 <h1 className="text-[20px]">Khushia</h1>
                 <p className="text-center">
-                  The refreshing trips organised by the Nature's club makes me feel rejuvinated.
+                  The refreshing trips organised by the Nature's club makes me feel rejuvinated
                 </p>
               </div>
           </div>
