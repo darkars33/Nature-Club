@@ -139,7 +139,7 @@ const Home = () => {
                 </p>
               </div>
           </div>
-{/*           <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
+          {/* <div className="box w-[350px]  p-2 flex items-center gap-3 xxs:flex-col">
               <img src={Pravesh} alt=""  className="w-[100px] rounded-[50%]"/>
               <div className="w-[100%] flex flex-col xxs:items-center">
                 <h1 className="text-[20px]">Pravesh</h1>
@@ -147,8 +147,8 @@ const Home = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, voluptates.
                 </p>
-              </div> */}
-          </div>
+              </div>
+          </div> */}
         </div>
       </div>
     </>
