@@ -10,8 +10,9 @@ import Error from "./Pages/Error";
 import Footer from "./Components/Footer";
 import Event from "./Pages/Event";
 import LogIn from "./BackendInputs/LogIn";
-
-
+import InputDocumentry from "./BackendInputs/InputDocumentry";
+import InputTeam from "./BackendInputs/InputTeam";
+import InputTrip from "./BackendInputs/InputTrip";
 
 
 
@@ -19,7 +20,7 @@ function App() {
 
   const location = useLocation();
   
-  const isLoginPath = location.pathname === "/login";
+  const isLoginPath = location.pathname === "/login" || location.pathname === "/input-documentary" || location.pathname === "/input-team" || location.pathname === "/input-trip";
   
  
 
@@ -35,6 +36,9 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/input-documentary" element={<InputDocumentry />} />
+        <Route path="/input-team" element={<InputTeam />} />
+        <Route path="/input-trip" element={<InputTrip />} />
       </Routes>
       {!isLoginPath && <Footer />}
       </>
