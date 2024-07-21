@@ -32,6 +32,7 @@ const Footer = () => {
                                                                                 <Link to='/team' className="text-green-200 hover:text-white">Our Teams</Link>
                                                                                 <Link to='/event' className="text-green-200 hover:text-white">Events</Link>
                                                                                 <Link to='/contact' className="text-green-200 hover:text-white">Contact us</Link>
+                                                                                <Link to='login'className="text-green-200 hover:text-white" >LogIn</Link>
                                                                       </ul>
                                                             </div>
                                                   </div>
