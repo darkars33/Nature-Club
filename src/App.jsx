@@ -13,6 +13,7 @@ import LogIn from "./BackendInputs/LogIn";
 import InputDocumentry from "./BackendInputs/InputDocumentry";
 import InputTeam from "./BackendInputs/InputTeam";
 import InputTrip from "./BackendInputs/InputTrip";
+import BackendNavBar from "./BackendInputs/BackendNavBar";
 
 
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       {!isLoginPath && <Navbar />}
+      {isLoginPath && <BackendNavBar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />

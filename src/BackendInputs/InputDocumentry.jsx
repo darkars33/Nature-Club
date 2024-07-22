@@ -23,7 +23,7 @@ const InputDocumentry = () => {
 
   return (
     <div className="w-screen h-screen p-2 bg-slate-300 flex justify-center items-center">
-      <form action="" className="flex flex-col gap-5" onSubmit={handleSubmit}>
+      <form className="w-[30%] flex flex-col gap-5" onSubmit={handleSubmit}>
       <h1 className='text-center text-[2rem]'>Documentary Info</h1>
         <label className="input input-bordered flex items-center gap-2">
           <input type="text" className="grow" placeholder="Documentary Name" name="name" onChange={handleChange} value={documentary.name} />
