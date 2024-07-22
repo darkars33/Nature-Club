@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
 
 const InputDocumentry = () => {
 
@@ -6,6 +7,29 @@ const InputDocumentry = () => {
     name: '',
     url: '',
     description: ''
+  })
+
+  const {mutate} = useMutation({
+    mutationFn: async() =>{
+      try {
+          const res= await fetch('http://localhost:5000/api/create/documentary',{
+            method: 'POST',
+            headers:{
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(documentary),
+          })
+          const data= await res.json();
+          if(!res.ok){
+            throw new Error(data.message);
+          }
+          return data;
+
+      } catch (error) {
+        throw new Error(error.message);
+        console.log(error);
+      }
+    }
   })
 
   const handleChange  = (e) =>{
@@ -17,7 +41,7 @@ const InputDocumentry = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    console.log(documentary);
+    mutate();
   }
 
 

@@ -14,7 +14,8 @@ import InputDocumentry from "./BackendInputs/InputDocumentry";
 import InputTeam from "./BackendInputs/InputTeam";
 import InputTrip from "./BackendInputs/InputTrip";
 import BackendNavBar from "./BackendInputs/BackendNavBar";
-
+import { useQuery } from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   
   const isLoginPath = location.pathname === "/login" || location.pathname === "/input-documentary" || location.pathname === "/input-team" || location.pathname === "/input-trip";
   
- 
+
 
   return (
     <>
@@ -43,6 +44,7 @@ function App() {
         <Route path="/input-trip" element={<InputTrip />} />
       </Routes>
       {!isLoginPath && <Footer />}
+      <Toaster />
       </>
   )
 }

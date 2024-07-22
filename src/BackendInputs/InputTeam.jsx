@@ -1,6 +1,8 @@
 import React, {useState, useRef} from 'react'
 import { CiImageOn } from "react-icons/ci";
 import { IoCloseSharp } from "react-icons/io5";
+import { useMutation } from '@tanstack/react-query';
+import { toast } from 'react-hot-toast';
 
 const InputTeam = () => {
 
@@ -11,10 +13,33 @@ const InputTeam = () => {
     instagramLink: '',
   })
 
-  const [profilePic, setProfilePic] = useState(null);
+  const [profile, setProfilePic] = useState(null);
   const picRef = useRef(null);
 
-  
+  const {mutate} = useMutation({
+    mutationFn: async({teamMember, profile}) =>{
+      try {
+        const res= await fetch("http://localhost:5000/api/create/team",{
+          method: 'POST',
+          headers:{
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({name: teamMember.name, position: teamMember.position, linkedInLink: teamMember.linkedInLink, instagramLink: teamMember.instagramLink, profile: profile}),
+        })
+        const data = await res.json();
+        if(!res.ok){
+          throw new Error(data.message);
+        }
+        return data;
+      } catch (error) {
+        console.log(error);
+        throw new Error(error.message);
+      }
+    },
+    onSuccess: () =>{
+      toast.success('Team Member Added Successfully');
+    }
+  })
 
   const handleChange = (e) =>{
     setTeamMember({
@@ -37,8 +62,7 @@ const InputTeam = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    console.log(teamMember);
-    console.log(profilePic);
+    mutate({teamMember, profile});
   }
 
   return (
@@ -58,13 +82,13 @@ const InputTeam = () => {
           <input type="url" className="grow" placeholder="Instagram Link" name="instagramLink" onChange={handleChange} value={teamMember.instagramLink} />
         </label>
         <label className=" flex items-center gap-2">
-          {profilePic && <> <IoCloseSharp className='cursor-pointer' onClick={() =>{
+          {profile && <> <IoCloseSharp className='cursor-pointer' onClick={() =>{
             setProfilePic(null);
             picRef.current.value = null;
-          }} /> <img src={profilePic} alt="profile" className="w-[100px] h-[100px]" /></>}
-         {!profilePic && <CiImageOn className="fill-primary w-6 h-6 cursor-pointer" onClick={() => picRef.current.click()} />}
+          }} /> <img src={profile} alt="profile" className="w-[100px] h-[100px]" /></>}
+         {!profile && <CiImageOn className="fill-primary w-6 h-6 cursor-pointer" onClick={() => picRef.current.click()} />}
           <input accept='image/*' type="file"  hidden  name="profilePic" onChange={handleImageChange} ref={picRef} />
-          {!profilePic && <span>Upload Profile Pic</span>}
+          {!profile && <span>Upload Profile Pic</span>}
         </label>
         <button className="btn rounded-full btn-primary text-white" type='submit'>Submit</button>
       </form>
